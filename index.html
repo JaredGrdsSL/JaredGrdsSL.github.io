@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PortfoliOS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        import * as emailjs from "@emailjs/browser";
+
+        (function () {
+            emailjs.init("bY2qI4S67NbvvIv3p");
+        })();
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="title">
+        <h1>Jared's Portfolio(tm) CMOS Setup utility</h1>
+    </div>
+    <div id="navBar">
+        <ul>
+            <li onclick="selectTab('Welcome')" class="selected">Welcome</li>
+            <li onclick="selectTab('Main')">Main</li>
+            <li onclick="selectTab('About')">About</li>
+            <li onclick="selectTab('Contact')">Contact</li>
+        </ul>
+    </div>
+    <div id="mainContainer">
+        <div id="Welcome" class="subMain">
+            <h1>Welcome</h1>
+            <p>My name is Jared Gerards, I'm currently studying software development at <br>SintLucas Eindhoven</p>
+            <p>I juggle hobbies, but as of writing this I'm mainly into beatboxing, drawing (unprofessionaly), and I
+                like to make music, however basic it might be :)</p>
+            <p>In this website you'll be able to take a little peek into my mind and my abilities and see for yourself
+                if I'm a good fit for your team, or you can
+                just look around for fun.</p>
+            <p>But don't forget to have a good time!</p>
+
+        </div>
+        <div id="Main" class="subMain hidden">      <!-- IMPORTANT STUFF CUH -->
+            <h1>Main</h1>
+            <!--Pheatthph-->
+            <p onclick="openModal('[data-pheatthph]')" class="clickableStyle">> Pheatthph</p>
+            <dialog data-pheatthph class="modalStyle">
+                <h1>Pheatthph</h1>
+                <div style="text-align: center">A game with a cool aesthetic.</div>
+                <img src="media/fet/movement.gif" alt="gif of fleshy gameplay">
+                <div>
+                    Pheatthph is a game some friends and I cooked up during one of our classic brainstorming
+                    sessions.<br><br>
+                    Pheatthph was made in UNITY and the project is currently still ongoing, with no planned end
+                    date.<br>
+                    The main idea behind the game is that you travel through different dimentions by going into this
+                    creature called
+                    pheatthph, a massive fetus in the sky. <br><br>
+                    As you might be able to tell the concept is really weird but it's surprisingly fun and
+                    gives a good aesthetic. The main aesthetic is also that we went for PS1 style graphics as you might
+                    be able to see in the footage above
+                </div>
+            </dialog>
+
+            <!--Goldfish-->
+            <p onclick="openModal('[data-goldfish]')" class="clickableStyle">> Goldfish Dreams</p>
+            <dialog data-goldfish class="modalStyle">
+                <h1>Goldfish Dreams</h1>
+                <div style="text-align: center">Our first game jam</div>
+                <img src="media/Goldfish/gameplay.gif" alt="top down pixel art shooter gameplay">
+                <div>
+                    This is a hotline miami inspired game where a Goldfish has to kill everyone from "Goldfish Killing
+                    Corp.". However, the fish obviously can't hold any guns, much less fire them, so the fish instead
+                    switches from person to person in order to accomplish its task. <br><br>
+                    This game was made for a game jam we had at school, which lasted around about 48 hours total. <br>
+                    I mainly did all the asset art whilst my friend Kick did the level art and music and Faelin did most
+                    of the coding. <br><br>
+                    I love this project because it's the first project I've actually managed to finish with my friends,
+                    and I also developed my art skills but above all else my ability to work on a game with a team.
+                </div>
+                <img src="media/Goldfish/furniture.png" alt="pixel art tilemap of worn down furniture">
+                <div>
+                    Here you can see some of the assets I made for the game.
+                </div>
+            </dialog>
+
+            <!--Paint-->
+            <p onclick="openModal('[data-paint]')" class="clickableStyle">> Paint Tool</p>
+            <dialog data-paint class="modalStyle">
+                <h1>Paint Tool</h1>
+                <div style="text-align: center">An important project</div>
+                <img src="media/thuisopdracht_main.png" alt="a drawing tool, with color selection below">
+                <div>
+                    This is a very important project to me because it's what eventually got me signed in to my dream
+                    college, Sint Lucas. <br><br>
+                    I made this the night before I had the interview, so it was pretty rushed, however in a working
+                    state. <br><br>
+                    Afterwards I worked on it a little further before moving on to bigger projects at Sint Lucas!
+                </div>
+            </dialog>
+
+            <!--Images-->
+            <p onclick="openModal('[data-images]')" class="clickableStyle">> Image Collection 1</p>
+            <dialog data-images class="modalStyle">
+                <h1>Image Collection 1</h1>
+                <div style="text-align: center">A collection of drawings I made.</div>
+                <img src="media/artwork/3145270_qwerzer_happy-easter-2023.png"
+                     alt="drawing of a bunny in a bird's nest">
+                <div>
+                    This is an easter bunny I drew to celebrate easter, it was also part of a small art contest going on
+                    in an art discord server
+                    <br><br>
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                </div>
+                <img src="media/artwork/2773696_qwerzer_halloween-banner-i-made-for-a-discord-server.png"
+                     alt="drawing of an ominous castle">
+                <div>
+                    This one is a drawing I made for a discord server that I used to be very active in called "Succumb"
+                    <br>(hence the name). <br>This actually became that server's banner which is why I included it here.
+                    <br><br>
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                </div>
+                <img src="media/artwork/3383178_qwerzer_chadmogus.png"
+                     alt="chad faced among us character">
+                <div>
+                    This one I made whilst drawing together with some friends, I added it here because it shows my
+                    art style up close and also it's just really funny.
+                    <br><br>
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                </div>
+                <img src="media/artwork/3145249_qwerzer_black-hole-drawing.png"
+                     alt="drawing of a bunny in a bird's nest">
+                <div>
+                    And last but not least the black hole, one of my better works and taught me a lot more about how to
+                    really stretch the limits of my drawing software (Drawpile).
+                    <br><br>
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                </div>
+            </dialog>
+        </div>
+        <div id="About" class="subMain hidden">
+            <h1>About</h1>
+            <p>Hello world!</p>
+            <p>
+                My name is Jared Gerards, I’m Dutch, I’m studying software development at SintLucas Eindhoven,
+                and I love creativity (Artistic things like music, drawing, puzzling, etc.). As you can tell
+                by the layout of the website I love old electronic stuff (even though these still look like
+                this nowadays) and I love how many things people could do way back when even with so many
+                limitations. I personally am not on the level of programming a BIOS yet but I’m willing to learn!
+                (haha). But in all seriousness, in this portfolio page I’d like to show you a little piece of me
+                on my journey through life, and the little projects I can take pride in.
+                <br><br>
+                For my actual programming skills I'd say I'm pretty decent. Being among the top in the class when it
+                comes to coding skill and also enjoying delving into multiple languages. <br>
+                I can competently code in C#, and C++, as well as JavaScript and Python, and I'm able to pick up a
+                language relatively quickly. I also wish to learn more about php and how servers operate so I can start
+                working in that sector. <br>
+                You can check out my Repl over in the contacts page if you want to see my smaller coding adventures ;)
+                <br><br>
+                <span style="color: #ffff04">Please enjoy your visit!</span>
+                <br><br>
+            </p>
+        </div>
+        <div id="Contact" class="subMain hidden">
+            <h1>Contact</h1>
+            <br>
+            <a href="mailto:jaredgerards@gmail.com" class="clickableStyle">> Email Me!</a>
+            <br><br>
+            <a href="https://www.linkedin.com/in/jared-gerards-875b43223/" target="_blank" class="clickableStyle">>
+                LinkedIn</a>
+            <br><br>
+            <a href="https://github.com/JaredGrdsSL" target="_blank" class="clickableStyle">> GitHub</a>
+            <br><br>
+            <a href="https://qwerzer.newgrounds.com/" target="_blank" class="clickableStyle">> Newgrounds</a>
+            <br><br>
+            <a href="https://replit.com/@Qwerzer23" target="_blank" class="clickableStyle">> Repl</a>
+            <br><br>
+            <a href="https://soundcloud.com/dj-mild-663971044" target="_blank" class="clickableStyle">> Soundcloud</a>
+        </div>
+    </div>
+    <div id="helpContainer">
+        <div id="WelcomeHelp" class="subHelp">
+            This is the welcome page
+            <br><br>
+            This page welcomes you and explains who I am and what this website is about.
+        </div>
+        <div id="MainHelp" class="subHelp hidden">
+            This is the main page
+            <br><br>
+            This page displays the projects that I have worked on over the years and wish to show off.
+        </div>
+        <div id="AboutHelp" class="subHelp hidden">
+            This is the about page
+            <br><br>
+            This page gives a more detailed description of who I am, and tells you what I'm skilled at.
+        </div>
+        <div id="ContactHelp" class="subHelp hidden">
+            This is the contact page
+            <br><br>
+            Here you can reach out to me on various platforms
+        </div>
+    </div>
+    <div id="tooltip">
+        <ul>
+            <li>Hover over item to select</li>
+            <li>Click to open</li>
+            <li>Click off of a pop-up to close it</li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
