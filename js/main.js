@@ -24,7 +24,7 @@ function openModal(data) {
     whatModal.showModal();
 }
 
-// This code makes it so clicking off of any modal closes it
+// This code makes it so clicking off of any modal closes all modals
 for (let i = 0; i < document.getElementsByTagName('dialog').length; i++) {
     let allDialog = document.getElementsByTagName('dialog')[i];
     allDialog.addEventListener('click', function (event) {

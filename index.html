@@ -7,16 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PortfoliOS</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        import * as emailjs from "@emailjs/browser";
-
-        (function () {
-            emailjs.init("bY2qI4S67NbvvIv3p");
-        })();
-    </script>
 </head>
 <body>
 <div id="container">
@@ -34,7 +24,7 @@
     <div id="mainContainer">
         <div id="Welcome" class="subMain">
             <h1>Welcome</h1>
-            <p>My name is Jared Gerards, I'm currently studying software development at <br>SintLucas Eindhoven</p>
+            <p>My name is Jared Gerards, I'm currently studying software development at SintLucas Eindhoven</p>
             <p>I juggle hobbies, but as of writing this I'm mainly into beatboxing, drawing (unprofessionaly), and I
                 like to make music, however basic it might be :)</p>
             <p>In this website you'll be able to take a little peek into my mind and my abilities and see for yourself
@@ -43,25 +33,37 @@
             <p>But don't forget to have a good time!</p>
 
         </div>
-        <div id="Main" class="subMain hidden">      <!-- IMPORTANT STUFF CUH -->
+        <div id="Main" class="subMain hidden">      <!-- IMPORTANT STUFF -->
             <h1>Main</h1>
-            <!--Pheatthph-->
-            <p onclick="openModal('[data-pheatthph]')" class="clickableStyle">> Pheatthph</p>
-            <dialog data-pheatthph class="modalStyle">
-                <h1>Pheatthph</h1>
-                <div style="text-align: center">A game with a cool aesthetic.</div>
-                <img src="media/fet/movement.gif" alt="gif of fleshy gameplay">
+
+            <!--Dreamcatcher-->
+
+            <p onclick="openModal('[data-dreamcatcher]')" class="clickableStyle">> Dreamcatcher</p>
+            <dialog data-dreamcatcher class="modalStyle">
+                <h1>Dreamcatcher</h1>
+                <div style="text-align: center">Passion project.</div>
+                <img src="media/Dreamcatcher/Starting%20room.png" alt="a room in the sky">
                 <div>
-                    Pheatthph is a game some friends and I cooked up during one of our classic brainstorming
-                    sessions.<br><br>
-                    Pheatthph was made in UNITY and the project is currently still ongoing, with no planned end
-                    date.<br>
-                    The main idea behind the game is that you travel through different dimentions by going into this
-                    creature called
-                    pheatthph, a massive fetus in the sky. <br><br>
-                    As you might be able to tell the concept is really weird but it's surprisingly fun and
-                    gives a good aesthetic. The main aesthetic is also that we went for PS1 style graphics as you might
-                    be able to see in the footage above
+                    Dreamcatcher is a game I made with an idea that just spawned in my head, namely the 360 FOV. It is
+                    not finished yet, however I do plan on finishing it eventually<br>
+                </div>
+                <img src="media/Dreamcatcher/Da%20chamber.png" alt="a weird warped room">
+                <div>
+                    As you can see the visuals are very trippy and do take a bit to get used to, however once you get
+                    used to them, you <i>can</i> actually use it practically.
+                </div>
+                <img src="media/Dreamcatcher/pause screen.png" alt="an immersive pause screen">
+                <div>
+                    This is the pause screen, another random idea that worked really well in game. I call it an
+                    immersive experience, others call it the most intrusive pause screen they've ever seen, to each
+                    their own I guess. <br> <br>
+                </div>
+                <h2>What I've learned</h2>
+                <div style="background-color: #a0a0a0;">
+                    This game taught me most of what I know about unity 3D now, including a bit about ShaderGraph,
+                    ProBuilder, and World Space UI, among others. It has also taught me some important lessons in how to
+                    come up with ideas for projects and how to actually turn them into a game instead of just a
+                    tech-demo. This is something I immediately already applied to my next project, Qorst.
                 </div>
             </dialog>
 
@@ -77,13 +79,59 @@
                     switches from person to person in order to accomplish its task. <br><br>
                     This game was made for a game jam we had at school, which lasted around about 48 hours total. <br>
                     I mainly did all the asset art whilst my friend Kick did the level art and music and Faelin did most
-                    of the coding. <br><br>
-                    I love this project because it's the first project I've actually managed to finish with my friends,
-                    and I also developed my art skills but above all else my ability to work on a game with a team.
+                    of the coding. <br>
                 </div>
                 <img src="media/Goldfish/furniture.png" alt="pixel art tilemap of worn down furniture">
                 <div>
-                    Here you can see some of the assets I made for the game.
+                    Here you can see some of the assets I made for the game. I bought Aseprite just for this project
+                    however I continue to use it as it is just that good.
+                </div>
+                <h2>What I've learned</h2>
+                <div style="background-color: #a0a0a0;">
+                    I love this project because it's the first project I've actually managed to finish with my friends,
+                    and I also developed my art skills but above all else my ability to work on a game with a team.
+                    It's also the first game jam I ever took part of, and it was fun to see how far we could get in a
+                    short amount of time. We even continued progress on this game after the jam to fix some bugs and add
+                    some features, and the game is out on <a href="https://de-heren-games.itch.io/goldfish-dreams"
+                                                             target="_blank">Itch.io</a>!
+                </div>
+            </dialog>
+
+            <!--Pheatthph-->
+            <p onclick="openModal('[data-pheatthph]')" class="clickableStyle">> Pheatthph</p>
+            <dialog data-pheatthph class="modalStyle">
+                <h1>Pheatthph</h1>
+                <div style="text-align: center">A game with a cool aesthetic.</div>
+                <img src="media/fet/movement.gif" alt="gif of fleshy gameplay">
+                <div>
+                    Pheatthph is a game some friends and I cooked up during one of our classic brainstorming
+                    sessions.<br><br>
+                    Pheatthph was made in UNITY and the project is currently still ongoing, with no planned end
+                    date.
+                </div>
+                <img src="media/fet/levelLoading.gif" alt="fleshy level loading system">
+                <div>
+                    The main idea behind the game is that you travel through different dimensions by going into this
+                    creature called
+                    pheatthph, a massive fetus in the sky. <br><br>
+                    As you might be able to tell the concept is really weird, but it's surprisingly fun and
+                    gives a good aesthetic. The main aesthetic is also that we went for PS1 style graphics as you might
+                    be able to see in the footage above
+                </div>
+                <img src="media/fet/pheatthphtBanner.png" alt="a foggy fleshy canyon">
+                <div>
+
+                </div>
+                <h2>What I've learned</h2>
+                <div style="background-color: #a0a0a0;">
+                    This game was my first time using GitHub with others. We first wanted to use PlasticSCM but that was
+                    too difficult to set up properly and I think we also had to pay, so instead we decided to learn and
+                    use GitHub, which has become one of the handiest things I ever learnt programming wise.
+                    What you see pictured above is also my first time using ProBuilder in Unity, which has also come in
+                    very handy. <br>
+                    <br>
+                    All in all this game has just been very helpful in learning even if it's not much of a game right
+                    now.
                 </div>
             </dialog>
 
@@ -100,6 +148,12 @@
                     state. <br><br>
                     Afterwards I worked on it a little further before moving on to bigger projects at Sint Lucas!
                 </div>
+                <h2>What I've learned</h2>
+                <div style="background-color: #a0a0a0;">
+                    From this project I didn't so much learn, as applied my previously built skills. However I did learn
+                    a lot about (Java)Processing which remains one of my favourite ways to code, as it's very practical
+                    programming but with great capacity for visual elements and a strong and expansive library.
+                </div>
             </dialog>
 
             <!--Images-->
@@ -107,15 +161,15 @@
             <dialog data-images class="modalStyle">
                 <h1>Image Collection 1</h1>
                 <div style="text-align: center">A collection of drawings I made.</div>
-                <img src="media/artwork/3145270_qwerzer_happy-easter-2023.png"
+                <img src="media/artwork1/3145270_qwerzer_happy-easter-2023.png"
                      alt="drawing of a bunny in a bird's nest">
                 <div>
-                    This is an easter bunny I drew to celebrate easter, it was also part of a small art contest going on
+                    This is an Easter bunny I drew to celebrate easter, it was also part of a small art contest going on
                     in an art discord server
                     <br><br>
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                 </div>
-                <img src="media/artwork/2773696_qwerzer_halloween-banner-i-made-for-a-discord-server.png"
+                <img src="media/artwork1/2773696_qwerzer_halloween-banner-i-made-for-a-discord-server.png"
                      alt="drawing of an ominous castle">
                 <div>
                     This one is a drawing I made for a discord server that I used to be very active in called "Succumb"
@@ -123,15 +177,15 @@
                     <br><br>
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                 </div>
-                <img src="media/artwork/3383178_qwerzer_chadmogus.png"
+                <img src="media/artwork1/3383178_qwerzer_chadmogus.png"
                      alt="chad faced among us character">
                 <div>
                     This one I made whilst drawing together with some friends, I added it here because it shows my
-                    art style up close and also it's just really funny.
+                    art style up close, and also it's just really funny.
                     <br><br>
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                 </div>
-                <img src="media/artwork/3145249_qwerzer_black-hole-drawing.png"
+                <img src="media/artwork1/3145249_qwerzer_black-hole-drawing.png"
                      alt="drawing of a bunny in a bird's nest">
                 <div>
                     And last but not least the black hole, one of my better works and taught me a lot more about how to
@@ -155,9 +209,9 @@
                 <br><br>
                 For my actual programming skills I'd say I'm pretty decent. Being among the top in the class when it
                 comes to coding skill and also enjoying delving into multiple languages. <br>
-                I can competently code in C#, and C++, as well as JavaScript and Python, and I'm able to pick up a
-                language relatively quickly. I also wish to learn more about php and how servers operate so I can start
-                working in that sector. <br>
+                I can competently code in C#, and Java, as well as JavaScript and Python, and I'm able to pick up a
+                language relatively quickly. I also wish to learn more about php and how servers operate, so I can start
+                working in that sector. And maybe someday branch off more into the world of machine languages. <br>
                 You can check out my Repl over in the contacts page if you want to see my smaller coding adventures ;)
                 <br><br>
                 <span style="color: #ffff04">Please enjoy your visit!</span>
@@ -214,4 +268,5 @@
 
 <script src="js/main.js"></script>
 </body>
+<!--WHAT THE FUCK-->
 </html>
