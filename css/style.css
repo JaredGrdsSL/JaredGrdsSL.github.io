@@ -194,8 +194,16 @@ body {
     background-color: #bebebe;
 }
 
-.hidden {
+.hide {
     display: none;
+    bottom: 0;
+    right: 2em;
+}
+
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
 }
 
 .collapse {
