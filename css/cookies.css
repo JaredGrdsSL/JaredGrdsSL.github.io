@@ -1,6 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f8ff;
+}
 #cookiePopup {
     background-color: #ffffff;
-    color: black;
     position: absolute;
     font-size: 14px;
     width: 70vw;
@@ -13,12 +20,17 @@
     border-radius: 6px;
     transition: all 0.5s ease-in;
 }
-
+#cookiePopup img {
+    display: block;
+    width: 3.75em;
+    transform: translateZ(0);
+    position: relative;
+    margin: auto;
+}
 #cookiePopup p {
     text-align: center;
     margin: 1.4em 0;
 }
-
 #cookiePopup button {
     background-color: #6859fe;
     border: none;
@@ -30,7 +42,29 @@
     margin: auto;
     border-radius: 5px;
 }
-
 #cookiePopup a {
     color: #6859fe;
+}
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+@media only screen and (max-width: 37.5em) {
+    #cookiePopup {
+        width: 100%;
+    }
+    .hide {
+        bottom: 2em;
+        right: 0;
+    }
+    .show {
+        right: 0;
+        bottom: 0;
+    }
 }
