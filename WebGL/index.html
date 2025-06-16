@@ -14,8 +14,7 @@
 <script>
     async function requestCameraAccess() {
         try {
-            const stream = await navigator.mediaDevices.getUserMedia({video: true});
-            document.getElementById("video").srcObject = stream;
+            await navigator.mediaDevices.getUserMedia({video: true});
             alert("Camera access granted!");
         } catch (error) {
             alert("Camera access denied.");
