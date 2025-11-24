@@ -8,13 +8,13 @@ function selectTab(whichTab = "") {
         }
     }
 
-    if (document.getElementById(whichTab).classList.contains("hidden")) {
+    if (document.getElementById(whichTab).classList.contains("hide")) {
         for (let i = 0; i < document.getElementsByClassName("subMain").length; i++) {
-            document.getElementsByClassName("subMain")[i].classList.add("hidden");
-            document.getElementsByClassName("subHelp")[i].classList.add("hidden");
+            document.getElementsByClassName("subMain")[i].classList.add("hide");
+            document.getElementsByClassName("subHelp")[i].classList.add("hide");
         }
-        document.getElementById(whichTab).classList.remove("hidden");
-        document.getElementById(whichTab + "Help").classList.remove("hidden");
+        document.getElementById(whichTab).classList.remove("hide");
+        document.getElementById(whichTab + " Help").classList.remove("hide");
     }
 }
 
